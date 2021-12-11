@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Truth Tables</title>
+	<style>
+		table {
+			table-layout: fixed;
+			/* width: 100%; */
+			border-collapse: collapse;
+			/* border: 2px solid black; */
+		}
+
+		table td {
+			border: 1px solid gray;
+		}
+
+		thead {
+			background-color: black;
+			color: white;
+			border: 1px solid gray;
+		}
+
+
+		tbody tr:nth-child(odd) {
+			background-color: #e0e0e0;
+		}
+
+		tbody tr:nth-child(even) {
+			background-color: #afafaf;
+		}
+
+		td {
+			text-align: center;
+			padding: 0 0.5rem;
+		}
+
+		td.true {
+			background-color: rgb(17, 167, 17);
+		}
+	</style>
+</head>
+
+<body>
+	<div id="container">
+		<table>
+			<thead>
+				<tr>
+				<td>A</td>
+				<td>B</td>
+				<td>C</td>
+				<td>D</td>
+			</tr>
+			</thead>
+			<tbody id="vars">
+			</tbody>
+		</table>
+	</div>
+	<script src="script.js"></script>
+	<!-- <script src="table.js"></script> -->
+</body>
+
+</html>
