@@ -38,7 +38,7 @@
 			padding: 0 0.5rem;
 		}
 
-		td.true {
+		.true {
 			background-color: rgb(17, 167, 17);
 		}
 	</style>
@@ -49,15 +49,75 @@
 		<table>
 			<thead>
 				<tr>
-				<td>A</td>
-				<td>B</td>
-				<td>C</td>
-				<td>D</td>
-			</tr>
+					<td>A</td>
+					<td>B</td>
+					<td>C</td>
+					<td>D</td>
+				</tr>
 			</thead>
 			<tbody id="vars">
 			</tbody>
 		</table>
+
+		<style>
+			div.columnar {
+				display: flex;
+				flex-direction: row;
+				border: solid gray;
+				border-width: 0 0 1px 1px;
+				width:min-content;
+			}
+
+			div.columnar>div.column {
+				display: flex;
+				flex-direction: column;
+			}
+
+			div.columnar > div.column:nth-child(0) {
+				background-color: black;
+				color: white;
+				border: 1px solid gray;
+			}
+
+			div.cell {
+			border: solid gray;
+			border-width: 1px 1px 0 0;
+			border-collapse: collapse;
+			text-align: center;
+			padding: 0 0.5rem;
+		}
+
+
+
+		div.column div.cell:nth-child(odd) {
+			background-color: #e0e0e0;
+		}
+
+		div.column div.cell:nth-child(even) {
+			background-color: #afafaf;
+		}
+
+		div.column div.cell:nth-child(1), div.colhead {
+			background-color: black;
+			color: white;
+		}
+		</style>
+
+		<!-- Heresy, a column-based table. -->
+		<div class="columnar">
+			<div class="column">
+				<div class="cell colhead">
+					A
+				</div>
+				<div class="cell">
+					0
+				</div>
+				<div class="cell">
+					0
+				</div>
+			</div>
+		</div>
+
 	</div>
 	<script src="script.js"></script>
 	<!-- <script src="table.js"></script> -->
