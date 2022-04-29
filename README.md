@@ -2,7 +2,7 @@
 
 <img width="678" alt="image" src="https://user-images.githubusercontent.com/13428215/165878767-f951e8bc-9014-4a3a-a519-ea0d1c881793.png">
 
-[**Launch it now!**](https://github.com/nok-ko/GUICalculator)
+[**Launch it now!**](https://nok-ko.github.io/boole/)
 
 ## What is this?
 
